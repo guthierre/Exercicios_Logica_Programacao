@@ -1,35 +1,31 @@
 package com.newdev.estruturascondicionais;
+
+import javax.sound.midi.Soundbank;
+import java.sql.SQLOutput;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+
 public class ForWhile {
     public static void main(String[] args) {
-        Scanner leitorScanner = new Scanner (System.in);
+        Scanner leitorScanner = new Scanner(System.in);
 
-
-
+        List<Integer> numero1 = new ArrayList<>();
+        int numero;
+        int numero2;
         int desejaContinuar = 1;
+        int i = 0;
+        while (desejaContinuar == 1) {
 
-        while(desejaContinuar == 1 ){
-            System.out.println("1° numero?");
-           int numero = leitorScanner.nextInt();
-            System.out.println("Qual numero deseja somar?");
-           int soma = leitorScanner.nextInt();
+            System.out.println("Escreva um numero " + i);
+            numero = leitorScanner.nextInt();
+            numero1.add(numero);
 
-            System.out.println("Deseja continuar? 1/Sim e  0/Não");
-                desejaContinuar = leitorScanner.nextInt();
+            System.out.println("Deseja continuar?");
+            desejaContinuar = leitorScanner.nextInt();
+        }
 
-                if (desejaContinuar == 1 ){
-                   int result = numero + soma;
-                    System.out.println("a soma entre o " + numero +","+ soma +" é ="+ result);
-                }
-             }
-
-
-
-
-
-
-
-
+        System.out.println(numero1);
 
     }
 }

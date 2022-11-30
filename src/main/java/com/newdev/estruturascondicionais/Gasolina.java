@@ -17,7 +17,7 @@ public class Gasolina {
 
         float kmr = km / gasolina;
         float media = kmr;
-        System.out.println("Seu carro gasta em media "+ kmr + "Lts de  gasolina por km");
+        System.out.println("Seu carro gasta em media "+ kmr + "km  por litro");
 
     }
 }
